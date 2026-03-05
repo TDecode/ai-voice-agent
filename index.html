@@ -1,33 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>AI Strategy Consultant</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Voice Agent</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/@vapi-ai/web/dist/vapi.js"></script>
 </head>
-
 <body>
-
-  <div class="container">
-    <div class="mic">🎙️</div>
-
-    <h1>AI Strategy Consultant</h1>
-    <p>Talk to our AI agent to explore automation for your business.</p>
-
-    <button onclick="startCall()">Start Conversation</button>
+  <div class="chat-container">
+    <div id="chat-box"></div>
+    <input type="text" id="user-input" placeholder="Type your message..." />
+    <button id="send-btn">Send</button>
   </div>
 
-  <footer>
-    Powered by Vapi
-  </footer>
-
-  <script>
-    const vapi = new Vapi("debb1463-5dc9-4940-8d9b-dc6c77554454");
-
-    function startCall() {
-      vapi.start("92b6252c-5943-4358-b08a-ee7eaecf7867");
-    }
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
