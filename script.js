@@ -3,9 +3,7 @@ const userInput = document.getElementById('user-input');
 const sendBtn = document.getElementById('send-btn');
 
 // Replace with your VAPI Assistant API endpoint and API key
-const VAPI_URL = 'https://api.vapi.ai/assistants/92b6252c-5943-4358-b08a-ee7eaecf7867/respond';
-const VAPI_KEY = 'e50bafbf-8281-4d92-9ff2-3963d9ef568b';
-
+const VAPI_URL =
 sendBtn.addEventListener('click', sendMessage);
 userInput.addEventListener('keypress', function(e) {
   if(e.key === 'Enter') sendMessage();
